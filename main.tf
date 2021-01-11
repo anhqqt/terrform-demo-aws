@@ -23,3 +23,11 @@ provider "aws" {
 #     key                   = "terraform.tfstate"
 #   }
 # }
+
+terraform {
+  backend "s3" {
+    bucket  = "aq-tfstate-bucket"
+    key     = "terraform.tfstate"
+    region  = "ap-southeast-1"
+  }
+}
