@@ -29,5 +29,6 @@ terraform {
     bucket  = "aq-tfstate-bucket"
     key     = "terraform.tfstate"
     region  = "ap-southeast-1"
+    dynamodb_table = "aq-dynamodb-tfstate-lock"
   }
 }
